@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .blog-subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #3498db;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            font-family: Arial, sans-serif;
+        }
+        
+        nav a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .blog-post {
+            margin-bottom: 50px;
+            padding: 30px;
+            border-left: 4px solid #3498db;
+            background-color: #fdfdfd;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .blog-post:last-child {
+            margin-bottom: 20px;
+        }
+        
+        .post-title {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .post-meta {
+            color: #95a5a6;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .post-content {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-right: 8px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        
+        .sidebar h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar a {
+            color: #3498db;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+        
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/blog">Blog</a>
+        </nav>
+        
+        <h1>📝 My Blog</h1>
+        <p class="blog-subtitle">Thoughts, tutorials, and musings about web development</p>
+        
+        <article class="blog-post">
+            <h2 class="post-title">Getting Started with Go Web Development</h2>
+            <div class="post-meta">
+                Published on March 15, 2024 • 5 min read
+            </div>
+            <div class="post-content">
+                <p>Go has become one of my favorite languages for web development. Its simplicity, performance, and excellent standard library make it perfect for building robust web applications and APIs.</p>
+                <p>In this post, I'll walk you through creating your first web server in Go, handling different HTTP methods, and serving both JSON and HTML responses...</p>
+                <div>
+                    <span class="tag">Go</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">Backend</span>
+                </div>
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+        
+        <article class="blog-post">
+            <h2 class="post-title">Building RESTful APIs: Best Practices</h2>
+            <div class="post-meta">
+                Published on March 10, 2024 • 8 min read
+            </div>
+            <div class="post-content">
+                <p>REST APIs are the backbone of modern web applications. Whether you're building a mobile app, a single-page application, or integrating with third-party services, understanding REST principles is crucial.</p>
+                <p>Let's explore the key concepts: proper HTTP methods, status codes, resource naming conventions, and how to structure your endpoints for maximum clarity and usability...</p>
+                <div>
+                    <span class="tag">REST</span>
+                    <span class="tag">API Design</span>
+                    <span class="tag">HTTP</span>
+                </div>
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+        
+        <article class="blog-post">
+            <h2 class="post-title">HTML & CSS Fundamentals for Developers</h2>
+            <div class="post-meta">
+                Published on March 5, 2024 • 6 min read
+            </div>
+            <div class="post-content">
+                <p>Even in the age of JavaScript frameworks, having a solid understanding of HTML and CSS fundamentals is essential. These technologies form the foundation of everything we see on the web.</p>
+                <p>Today we'll cover semantic HTML, CSS Grid and Flexbox, responsive design principles, and how to create beautiful, accessible web interfaces...</p>
+                <div>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Frontend</span>
+                    <span class="tag">Responsive Design</span>
+                </div>
+            </div>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+        
+        <div class="sidebar">
+            <h3>📚 Recent Topics</h3>
+            <ul>
+                <li><a href="#">Go Concurrency Patterns</a></li>
+                <li><a href="#">Database Integration with GORM</a></li>
+                <li><a href="#">JWT Authentication in Go</a></li>
+                <li><a href="#">Docker for Go Applications</a></li>
+                <li><a href="#">Testing HTTP Handlers</a></li>
+            </ul>
+            
+            <h3>🏷️ Popular Tags</h3>
+            <div>
+                <span class="tag">Go</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">React</span>
+                <span class="tag">API</span>
+                <span class="tag">Database</span>
+                <span class="tag">Docker</span>
+            </div>
+        </div>
+        
+        <footer style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #ecf0f1; color: #7f8c8d;">
+            <p>Made with ❤️ using Go • <a href="/home" style="color: #3498db;">Back to Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>

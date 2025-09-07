@@ -7,16 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f1f1f1;
         }
         
         .container {
             background-color: white;
-            padding: 30px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
@@ -58,12 +58,12 @@
             text-align: center;
             margin-bottom: 30px;
             padding: 20px 0;
-            border-bottom: 2px solid #e9ecef;
+            background-color: #66c3e8;
         }
         
         nav a {
             text-decoration: none;
-            color: #007bff;
+            color: #000900;
             margin: 0 15px;
             font-weight: bold;
             padding: 10px 20px;
@@ -95,42 +95,40 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="/home">Home</a>
-            <a href="/blog">Blog</a>
-        </nav>
-        
-        <div class="welcome-section">
-            <h1>🏠 Welcome Home!</h1>
-            <p>This page is served by your Go API from the <strong>/home</strong> endpoint.</p>
-            <p>You've successfully created a web server that serves HTML pages!</p>
-        </div>
-        
-        <div class="features">
-            <div class="feature">
-                <h3>🚀 Fast</h3>
-                <p>Built with Go for high performance and efficiency</p>
-            </div>
-            
-            <div class="feature">
-                <h3>🎯 Simple</h3>
-                <p>Clean, minimal code that's easy to understand</p>
-            </div>
-            
-            <div class="feature">
-                <h3>🔧 Flexible</h3>
-                <p>Easy to extend with more endpoints and features</p>
-            </div>
-        </div>
-        
-        <div class="blog-link">
-            <a href="/blog">Visit the Blog →</a>
-        </div>
-        
-        <footer style="text-align: center; margin-top: 50px; color: #666;">
-            <p>Powered by Go HTTP Server</p>
-        </footer>
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/blog">Blog</a>
+    </nav>
+    
+    <div class="welcome-section">
+        <h1>🏠 Welcome Home!</h1>
+        <p>This page is served by your Go API from the <strong>/home</strong> endpoint.</p>
+        <p>You've successfully created a web server that serves HTML pages!</p>
     </div>
+    
+    <div class="features">
+        <div class="feature">
+            <h3>🚀 Fast</h3>
+            <p>Built with Go for high performance and efficiency</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🎯 Simple</h3>
+            <p>Clean, minimal code that's easy to understand</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔧 Flexible</h3>
+            <p>Easy to extend with more endpoints and features</p>
+        </div>
+    </div>
+    
+    <div class="blog-link">
+        <a href="/blog">Visit the Blog →</a>
+    </div>
+    
+    <footer style="text-align: center; margin-top: 50px; color: #666;">
+        <p>Powered by Go HTTP Server</p>
+    </footer>
 </body>
 </html>

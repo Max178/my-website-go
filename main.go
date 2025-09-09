@@ -31,6 +31,7 @@ func main() {
     // Start server - bind to all interfaces (0.0.0.0)
     port := ":80"
     fmt.Printf("Server running on port %s\n", port)
-    log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
+    // For HTTP only
+    log.Fatal(http.ListenAndServe(":80", nil))
+    // For HTTPS only (requires SSL certificates)
 }
-

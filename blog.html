@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title>Sports Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,11 +18,6 @@
             color: #333;
             text-align: center;
             margin-bottom: 30px;
-        }
-        
-        .welcome-section {
-            text-align: center;
-            margin: 40px 0;
         }
         
         nav {
@@ -41,7 +36,7 @@
             border-radius: 4px;
             transition: background-color 0.3s;
         }
-
+        
         nav a:hover {
             background-color: #e9ecef;
         }
@@ -68,7 +63,6 @@
             color: #95a5a6;
             font-size: 0.9em;
             margin-bottom: 20px;
-            font-family: Arial, sans-serif;
         }
         
         .post-content {
@@ -80,7 +74,6 @@
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
-            font-family: Arial, sans-serif;
         }
         
         .read-more:hover {
@@ -95,7 +88,6 @@
             border-radius: 12px;
             font-size: 0.8em;
             margin-right: 8px;
-            font-family: Arial, sans-serif;
         }
         
         .sidebar {
@@ -108,7 +100,6 @@
         .sidebar h3 {
             color: #2c3e50;
             margin-bottom: 20px;
-            font-family: Arial, sans-serif;
         }
         
         .sidebar ul {
@@ -123,7 +114,6 @@
         .sidebar a {
             color: #3498db;
             text-decoration: none;
-            font-family: Arial, sans-serif;
         }
         
         .sidebar a:hover {
@@ -134,90 +124,87 @@
 <body>
     <nav>
         <a href="/home">Home</a>
-        <a href="/blog">Blog</a>
+        <a href="/blog">Sports Blog</a>
         <a href="/projects">Projects</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
     </nav>  
     
-    <h1>📝 My Blog</h1>
-    <p class="blog-subtitle">Thoughts, tutorials, and musings about web development</p>
+    <h1>⚽ Sports Blog</h1>
+    <p class="blog-subtitle" style="text-align: center;">Insights, news, and analysis on your favorite sports</p>
     
     <article class="blog-post">
-        <h2 class="post-title">Getting Started with Go Web Development</h2>
+        <h2 class="post-title">Football Tactics: A Beginner's Guide</h2>
         <div class="post-meta">
-            Published on March 15, 2024 • 5 min read
+            Published on September 1, 2025 • 7 min read
         </div>
         <div class="post-content">
-            <p>Go has become one of my favorite languages for web development. Its simplicity, performance, and excellent standard library make it perfect for building robust web applications and APIs.</p>
-            <p>In this post, I'll walk you through creating your first web server in Go, handling different HTTP methods, and serving both JSON and HTML responses...</p>
+            <p>Football is more than just a game—it's a battle of tactics, precision, and teamwork. In this post, we break down some basic formations and strategic insights to help you better appreciate the beautiful game.</p>
             <div>
-                <span class="tag">Go</span>
-                <span class="tag">Web Development</span>
-                <span class="tag">Backend</span>
+                <span class="tag">Football</span>
+                <span class="tag">Tactics</span>
             </div>
         </div>
         <a href="#" class="read-more">Read More →</a>
     </article>
     
     <article class="blog-post">
-        <h2 class="post-title">Building RESTful APIs: Best Practices</h2>
+        <h2 class="post-title">Top 10 NBA Moments of the 2025 Season</h2>
         <div class="post-meta">
-            Published on March 10, 2024 • 8 min read
+            Published on August 28, 2025 • 6 min read
         </div>
         <div class="post-content">
-            <p>REST APIs are the backbone of modern web applications. Whether you're building a mobile app, a single-page application, or integrating with third-party services, understanding REST principles is crucial.</p>
-            <p>Let's explore the key concepts: proper HTTP methods, status codes, resource naming conventions, and how to structure your endpoints for maximum clarity and usability...</p>
+            <p>The 2025 NBA season has provided us with jaw-dropping moments and unforgettable plays. Here’s a rundown of the top ten moments that defined the season, complete with in-depth analysis and behind-the-scenes stories.</p>
             <div>
-                <span class="tag">REST</span>
-                <span class="tag">API Design</span>
-                <span class="tag">HTTP</span>
+                <span class="tag">NBA</span>
+                <span class="tag">Basketball</span>
+                <span class="tag">Highlights</span>
             </div>
         </div>
         <a href="#" class="read-more">Read More →</a>
     </article>
     
     <article class="blog-post">
-        <h2 class="post-title">HTML & CSS Fundamentals for Developers</h2>
+        <h2 class="post-title">Marathon Training: Tips for Runners</h2>
         <div class="post-meta">
-            Published on March 5, 2024 • 6 min read
+            Published on August 20, 2025 • 8 min read
         </div>
         <div class="post-content">
-            <p>Even in the age of JavaScript frameworks, having a solid understanding of HTML and CSS fundamentals is essential. These technologies form the foundation of everything we see on the web.</p>
-            <p>Today we'll cover semantic HTML, CSS Grid and Flexbox, responsive design principles, and how to create beautiful, accessible web interfaces...</p>
+            <p>Training for a marathon requires endurance, commitment, and smart planning. In this article, we share practical advice, training schedules, and nutritional tips to help both beginners and experienced runners achieve their best performance.</p>
             <div>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Frontend</span>
-                <span class="tag">Responsive Design</span>
+                <span class="tag">Running</span>
+                <span class="tag">Marathon</span>
+                <span class="tag">Training</span>
             </div>
         </div>
         <a href="#" class="read-more">Read More →</a>
     </article>
     
     <div class="sidebar">
-        <h3>📚 Recent Topics</h3>
+        <h3>📚 Recent Sports Topics</h3>
         <ul>
-            <li><a href="#">Go Concurrency Patterns</a></li>
-            <li><a href="#">Database Integration with GORM</a></li>
-            <li><a href="#">JWT Authentication in Go</a></li>
-            <li><a href="#">Docker for Go Applications</a></li>
-            <li><a href="#">Testing HTTP Handlers</a></li>
+            <li><a href="#">Analyzing Football Formations</a></li>
+            <li><a href="#">Basketball Shooting Techniques</a></li>
+            <li><a href="#">Latest Cycling Trends</a></li>
+            <li><a href="#">Cricket: Strategies and Stats</a></li>
+            <li><a href="#">The Future of Esports</a></li>
         </ul>
         
-        <h3>🏷️ Popular Tags</h3>
+        <h3>🏷️ Popular Sports Tags</h3>
         <div>
-            <span class="tag">Go</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React</span>
-            <span class="tag">API</span>
-            <span class="tag">Database</span>
-            <span class="tag">Docker</span>
+            <span class="tag">Football</span>
+            <span class="tag">Basketball</span>
+            <span class="tag">Running</span>
+            <span class="tag">Cycling</span>
+            <span class="tag">Esports</span>
         </div>
     </div>
     
     <footer style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #ecf0f1; color: #7f8c8d;">
-        <p>Made with ❤️ using Go • <a href="/home" style="color: #3498db;">Back to Home</a></p>
+        <p><a href="/home" style="color: #3498db;">Back to Home</a></p>
     </footer>
 </body>
 </html>
+``` 
+
+Feel free to adjust the posts or styling as needed

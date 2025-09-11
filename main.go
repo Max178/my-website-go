@@ -10,12 +10,56 @@ import (
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	http.ServeFile(w, r, "home.html")
+    ip := r.RemoteAddr
+    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
+        ip = forwarded
+    }
+    log.Printf("Home page accessed from IP: %s", ip)
 }
 
 // blogHandler handles requests to /blog
 func blogHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	http.ServeFile(w, r, "blog.html")
+    ip := r.RemoteAddr
+    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
+        ip = forwarded
+    }
+    log.Printf("Blog page accessed from IP: %s", ip)
+}
+
+// contactHandler handles requests to /contact
+func contactHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	http.ServeFile(w, r, "contact.html")
+    ip := r.RemoteAddr
+    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
+        ip = forwarded
+    }
+    log.Printf("Contact page accessed from IP: %s", ip)
+}
+
+// projectHandler handles requests to /project
+func projectHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	http.ServeFile(w, r, "projects.html")
+    log.Println("Project page accessed")
+    ip := r.RemoteAddr
+    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
+        ip = forwarded
+    }
+    log.Printf("Project page accessed from IP: %s", ip)
+}
+
+// aboutHandler handles requests to /about
+func aboutHandler(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "text/html")
+    http.ServeFile(w, r, "about.html")
+    ip := r.RemoteAddr
+    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
+        ip = forwarded
+    }
+    log.Printf("About page accessed from IP: %s", ip)
 }
 
 func main() {
@@ -27,6 +71,9 @@ func main() {
     http.HandleFunc("/", homeHandler)
     http.HandleFunc("/home", homeHandler)
     http.HandleFunc("/blog", blogHandler)
+    http.HandleFunc("/contact", contactHandler)
+    http.HandleFunc("/projects", projectHandler)
+    http.HandleFunc("/about", aboutHandler)
     
     // Start server - bind to all interfaces (0.0.0.0)
     port := ":80"

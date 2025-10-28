@@ -21,41 +21,24 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 func blogHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	http.ServeFile(w, r, "blog.html")
-    ip := r.RemoteAddr
-    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
-        ip = forwarded
-    }
 }
 
 // contactHandler handles requests to /contact
 func contactHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	http.ServeFile(w, r, "contact.html")
-    ip := r.RemoteAddr
-    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
-        ip = forwarded
-    }
 }
 
 // projectHandler handles requests to /project
 func projectHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	http.ServeFile(w, r, "projects.html")
-    log.Println("Project page accessed")
-    ip := r.RemoteAddr
-    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
-        ip = forwarded
-    }
 }
 
 // aboutHandler handles requests to /about
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
     w.Header().Set("Content-Type", "text/html")
     http.ServeFile(w, r, "about.html")
-    ip := r.RemoteAddr
-    if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
-        ip = forwarded
-    }
 }
 
 func main() {

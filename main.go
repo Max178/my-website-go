@@ -25,7 +25,6 @@ func blogHandler(w http.ResponseWriter, r *http.Request) {
     if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
         ip = forwarded
     }
-    log.Printf("Blog page accessed from IP: %s", ip)
 }
 
 // contactHandler handles requests to /contact
@@ -36,7 +35,6 @@ func contactHandler(w http.ResponseWriter, r *http.Request) {
     if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
         ip = forwarded
     }
-    log.Printf("Contact page accessed from IP: %s", ip)
 }
 
 // projectHandler handles requests to /project
@@ -48,7 +46,6 @@ func projectHandler(w http.ResponseWriter, r *http.Request) {
     if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
         ip = forwarded
     }
-    log.Printf("Project page accessed from IP: %s", ip)
 }
 
 // aboutHandler handles requests to /about
@@ -59,7 +56,6 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
     if forwarded := r.Header.Get("X-Forwarded-For"); forwarded != "" {
         ip = forwarded
     }
-    log.Printf("About page accessed from IP: %s", ip)
 }
 
 func main() {
